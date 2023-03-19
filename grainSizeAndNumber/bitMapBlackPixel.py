@@ -12,7 +12,7 @@ def main():
     img = cv2.imread(imageFile)  # image file
     image = cv2.resize(img, (width,height), interpolation = cv2.INTER_AREA)
     blur = cv2.medianBlur(image, 5)
-    blur2 = cv2.medianBlur(blur, 5)
+    blur2 = cv2.medianBlur(blur, 5) ## this picture needs double blur
     gray = cv2.cvtColor(blur2, cv2.COLOR_BGR2GRAY)
     bitmap = cv2.threshold(gray,threshold,255, cv2.THRESH_BINARY)[1]
     backToRgbForLines = cv2.cvtColor(bitmap,cv2.COLOR_GRAY2RGB)
