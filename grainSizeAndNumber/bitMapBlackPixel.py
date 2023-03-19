@@ -3,7 +3,7 @@ import cv2
 threshold = 140 # this changes pic-to-pic
 numberOfLines=10 # how many line you want to draw
 imageFile='pictures/1.png'
-width=900 # image width after resizing
+width=900 # image width after resizingg
 height=900 # image height after resizing
 
 def main():
